@@ -152,7 +152,7 @@ def update():
         latest_source = requests.get(
             "https://raw.githubusercontent.com/nanamvputri02/HyoukuFuscate/main/HyoukuFuscate.py"
         ).content
-        with open("py_fuscate.py", "wb") as file:
+        with open("HyoukuFuscate.py", "wb") as file:
             file.write(latest_source)
         with open(".version", "w") as file:
             file.write(LATEST_VER)
